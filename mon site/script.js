@@ -4,6 +4,19 @@ function AddValue(id, value) {
         div.appendChild(content);
 }
 
+function addContentToDiv(id, value) {
+    var div = document.getElementById(id)
+    div.append(value)
+}
+
+function addImgToDiv(element, id, imgUrl) {
+    var element = document.createElement(element)
+    element.src = imgUrl
+    var div = document.getElementById(id)
+    div.append(element)
+}
+
+
 function MeilleurFilm() {
     var url = "http://localhost:8000/api/v1/titles/?sort_by=-imdb_score"
     fetch(url)
@@ -16,9 +29,10 @@ function MeilleurFilm() {
             var titre = data.title
             var image = data.image_url
             var description = data.long_description
-            console.log("titre : " + titre)
-            console.log("description : " + description)
-            console.log("url image : " + image)
+            
+            addContentToDiv('title_best_film', titre)
+            addImgToDiv('img', 'image_best_film', image)
+            addContentToDiv('description_best_film', description)
         })
     })}
 
@@ -55,6 +69,7 @@ function takeInformationsFromFilms(id) {
         console.log(resume)
     })
 }
+
 
 function getIdBygenres(genre) {
     var url = "http://localhost:8000/api/v1/titles/?genre=" + genre + "&sort_by=-imdb_score"
