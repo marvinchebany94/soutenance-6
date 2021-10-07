@@ -71,14 +71,14 @@ function top7BestFilms(genre) {
             })
         })
     } else {
-        let url = "http://localhost:8000/api/v1/titles/?genres=" + genre
+        let url = "http://localhost:8000/api/v1/titles/?genre=" + genre
         let urlPage2 = url + "&page=2"
         fetch(url)
         .then(res => res.json())
         .then(data => {
             var i = 0
             while (i < 5) {
-                imageUrl = data.results[i].image_url
+                let imageUrl = data.results[i].image_url
                 console.log(imageUrl)
                 i++;
                 var id = 'film_' + genre + '_' + i
@@ -90,10 +90,10 @@ function top7BestFilms(genre) {
                 var i = 0
                 film_number = 5
                 while (i < 2) {
-                    imageUrl = data.results[i].image_url
+                    let imageUrl = data.results[i].image_url
                     i++;
                     film_number++;
-                    var id = 'film_' + genre + '_' + film_number
+                    let id = 'film_' + genre + '_' + film_number
                     addImgToDiv('img', id, imageUrl) 
             }
             })
@@ -102,9 +102,10 @@ function top7BestFilms(genre) {
     }
 }
 top7BestFilms('')
-top7BestFilms('actions')
+top7BestFilms('action')
 top7BestFilms('comedy')
-top7BestFilms('adventures')
+top7BestFilms('adventure')
+
 
 function takeInformationsFromFilms(id) {
     var url = "http://localhost:8000/api/v1/titles/" + id
