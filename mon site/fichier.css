@@ -1,0 +1,15 @@
+#header {
+    border-width: 150px;
+    border-color: darkolivegreen;
+    border: solid;
+}
+#les_7_meilleirs_films {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  #les_7_meilleurs_films :first-child {
+      align-self: center;
+  }
+        

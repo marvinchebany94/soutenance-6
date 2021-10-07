@@ -1,20 +1,43 @@
 body {
-    margin-left: 50px;
-    margin-right: 50px;
+    position: absolute;
+    margin-left: 500px;
+    margin-right: 500px;
+    overflow-x: scroll;
+    min-width: 1000px;
+    
 }  
 #header {
-    height: 150px;
+    height: 75px;
     border-width: 300px;
     background-color: rgb(138, 138, 138);
     border: solid;
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    
 }
-
-.header_text{
+.nom_site {
     font-size: xx-large;
-    top: 0px;
+    position: relative;
+    display: inline-block;
+    color: lavender;
+    margin-left: 15px;
+    
+}
+.lien_navigation{
+    font-size: xx-large;
+    color: lavender;
+    justify-content: center;
+    display: inline-block;
+    left: 300px;
+    margin-left: 15px;
+    position: relative;
+    
 }  
 .pochette {
     display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #les_7_meilleirs_films {
@@ -26,3 +49,7 @@ body {
   #les_7_meilleurs_films :first-child {
       align-self: center;
   }
+
+h1 {
+    text-align: center;
+}
