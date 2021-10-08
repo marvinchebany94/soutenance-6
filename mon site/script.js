@@ -12,10 +12,11 @@ function addContentToDiv(id, value) {
     div.append(value)
 }
 
-function addImgToDiv(element, id, imgUrl) {
+function addImgToDiv(element, identifiant, imgUrl, id_film) {
     var element = document.createElement(element)
     element.src = imgUrl
-    var div = document.getElementById(id)
+    element.id = id_film
+    var div = document.getElementById(identifiant)
     div.append(element)
 }
 
@@ -51,10 +52,10 @@ function top7BestFilms(genre) {
             var i = 1
             while (i < 5) {
                 imageUrl = data.results[i].image_url
-                console.log(imageUrl)
-                var id = 'film_' + i
+                id = data.results[i].id
+                var identifiant = 'film_' + i
                 i++;
-                addImgToDiv('img', id, imageUrl) 
+                addImgToDiv('img', identifiant, imageUrl, id) 
             }
             fetch(urlBySortImdbScorePage2)
             .then(res => res.json())
@@ -63,10 +64,11 @@ function top7BestFilms(genre) {
                 film_number = 4
                 while (i < 3) {
                     imageUrl = data.results[i].image_url
+                    id = data.results[i].id
                     i++;
                     film_number++;
-                    var id = 'film_' + film_number
-                    addImgToDiv('img', id, imageUrl) 
+                    var identifiant = 'film_' + film_number
+                    addImgToDiv('img', identifiant, imageUrl, id) 
             }
             })
         })
@@ -79,10 +81,10 @@ function top7BestFilms(genre) {
             var i = 0
             while (i < 5) {
                 let imageUrl = data.results[i].image_url
-                console.log(imageUrl)
+                let id = data.results[i].id
                 i++;
-                var id = 'film_' + genre + '_' + i
-                addImgToDiv('img', id, imageUrl) 
+                var identifiant = 'film_' + genre + '_' + i
+                addImgToDiv('img', identifiant, imageUrl, id) 
             }
             fetch(urlPage2)
             .then(res => res.json())
@@ -91,10 +93,11 @@ function top7BestFilms(genre) {
                 film_number = 5
                 while (i < 2) {
                     let imageUrl = data.results[i].image_url
+                    let id = data.results[i].id
                     i++;
                     film_number++;
-                    let id = 'film_' + genre + '_' + film_number
-                    addImgToDiv('img', id, imageUrl) 
+                    let identifiant = 'film_' + genre + '_' + film_number
+                    addImgToDiv('img', identifiant, imageUrl, id) 
             }
             })
         })
