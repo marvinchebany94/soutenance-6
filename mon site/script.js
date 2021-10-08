@@ -179,3 +179,32 @@ function getIdBygenres(genre) {
 })
 }
 
+function FenetreModal() {
+    id = event.srcElement.id
+    url = "http://localhost:8000/api/v1/titles/" + id
+    fetch(url)
+    .then(res => res.json())
+    .then(data => {
+        var image = data.image_url
+        addImgToDiv('img', 'image', image, data.id)
+        var titre = data.title
+        AddValue('titre', titre)
+        var genre = data.genres
+        AddValue('genre', genre)
+        var dateDeSortie = data.date_published
+        AddValue('titre', titre)
+        var scoreImdb = data.imdb_score
+        var realisateur = data.writers
+        var acteurs = data.actors
+        var duree = data.duration
+        var paysOrigine = data.countries
+        var boxOfficeresultat = data.avg_vote
+        var resume = data.long_description
+    })
+    
+    console.log('id :'+id)
+    windowModal = document.getElementById('fenetreModale')
+    windowModal.showModal()
+
+}
+
