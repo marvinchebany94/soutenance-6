@@ -16,6 +16,17 @@ body {
     position: relative;
     
 }
+
+#title_best_film {
+font-size: xx-large;
+}
+#description_best_film {
+    font-size: x-large;
+}
+#BoutonPlay {
+    height: 50px;
+}
+
 .nom_site {
     font-size: xx-large;
     position: relative;
@@ -52,4 +63,16 @@ body {
 
 h1 {
     text-align: center;
+}
+
+#fenetreModale {
+    position: relative;
+    margin-right: 500px;
+    margin-left: 500px;
+    width: 970px;
+}
+
+#croix {
+    left: 850px;
+    position: absolute;
 }

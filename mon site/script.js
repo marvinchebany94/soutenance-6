@@ -73,7 +73,7 @@ function top7BestFilms(genre) {
             })
         })
     } else {
-        let url = "http://localhost:8000/api/v1/titles/?genre=" + genre
+        let url = "http://localhost:8000/api/v1/titles/?genre=" + genre + "&sort_by=-imdb_score"
         let urlPage2 = url + "&page=2"
         fetch(url)
         .then(res => res.json())
@@ -162,7 +162,7 @@ function getIdBygenres(genre) {
         }
     })
 
-    url = url + "&page=2"
+    url = "http://localhost:8000/api/v1/titles/?genre=" + genre + "&page=2" + "&sort_by=-imdb_score"
     fetch(url)
     .then(res => res.json())
     .then(data => {
