@@ -50,7 +50,9 @@ font-size: xx-large;
     margin-right: 20px;
     margin-left: 20px;
 }
-
+.pochette:hover {
+    transform: scale(1.2);
+}
 #les_7_meilleirs_films {
     display: flex;
     align-items: flex-start;
