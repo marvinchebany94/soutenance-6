@@ -192,14 +192,23 @@ function FenetreModal() {
         var genre = data.genres
         AddValue('genre', genre)
         var dateDeSortie = data.date_published
-        AddValue('titre', titre)
+        AddValue('date_de_sortie', dateDeSortie)
+        var rated = data.rated
+        AddValue('rated', rated)
         var scoreImdb = data.imdb_score
+        AddValue('score_imdb', scoreImdb)
         var realisateur = data.writers
+        AddValue('realisateur', realisateur)
         var acteurs = data.actors
+        AddValue('liste_acteurs', acteurs)
         var duree = data.duration
+        AddValue("temps", duree)
         var paysOrigine = data.countries
+        AddValue('pays_origine', paysOrigine)
         var boxOfficeresultat = data.avg_vote
+        AddValue('resultat_box_office', boxOfficeresultat)
         var resume = data.long_description
+        AddValue('resume', resume)
     })
     
     console.log('id :'+id)
@@ -207,4 +216,16 @@ function FenetreModal() {
     windowModal.showModal()
 
 }
-
+function viderDiv(id) {
+    div = document.getElementById(id)
+    div.innerHTML = "";
+}
+function Fermer() {
+    windowModal = document.getElementById('fenetreModale')
+    windowModal.close()
+    listeId = ['image',  'titre', 'genre', 'date_de_sortie', 'rated', 'score_imdb', 'realisateur', 
+'liste_acteurs', 'temps', 'pays_origine', 'resultat_box_office', 'resume']
+for (id of listeId) {
+    viderDiv(id)
+}
+}
