@@ -16,6 +16,14 @@ body {
     position: relative;
     
 }
+#film_le_mieux_note {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+#image_best_film {
+    float: right;
+}
 
 #title_best_film {
 font-size: xx-large;
@@ -54,6 +62,7 @@ font-size: xx-large;
     transform: scale(1.2);
 }
 #les_7_meilleirs_films {
+    
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -75,6 +84,14 @@ h1 {
 }
 
 #croix {
-    left: 850px;
-    position: absolute;
+    text-align: center;
 }
+
+#image {
+    float: right;
+}
+
+
+
+
+
