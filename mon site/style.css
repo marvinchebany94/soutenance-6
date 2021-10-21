@@ -20,19 +20,37 @@ body {
     position: relative;
     margin-top: 10px;
     overflow: hidden;
+    border: 8px solid;
+    height: 272px;
 }
 #image_best_film {
-    float: right;
+    text-align: center;
+    vertical-align: center;
+    bottom: -2px;
+    position: relative;
 }
 
 #title_best_film {
-font-size: xx-large;
+    font-size: xx-large;
+    
+    position: absolute; 
+    top: 20px;
+    margin-left: 15px;
 }
 #description_best_film {
     font-size: x-large;
+    position: absolute;
+    margin-left: 15px;
+    width: 380px;
+    
+    top: 125px;
 }
 #BoutonPlay {
-    height: 50px;
+    
+    height: 25px;
+    position: absolute;
+    top: 80px;
+    margin-left: 15px;
 }
 
 .nom_site {
@@ -54,6 +72,7 @@ font-size: xx-large;
     
 }  
 .pochette {
+    border: 8px solid;
     display: inline-block;
     margin-right: 20px;
     margin-left: 20px;
