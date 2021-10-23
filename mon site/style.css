@@ -1,11 +1,11 @@
 body {
-    position: absolute;
-    margin-left: 500px;
-    margin-right: 500px;
+    width: 600px;
+    margin: auto;
     overflow-x: scroll;
     min-width: 1000px;
     
 }  
+
 #header {
     height: 75px;
     border-width: 300px;
@@ -13,9 +13,8 @@ body {
     border: solid;
     width: 100%;
     min-width: 100%;
-    position: relative;
-    
 }
+
 #film_le_mieux_note {
     position: relative;
     margin-top: 10px;
