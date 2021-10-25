@@ -22,6 +22,7 @@ body {
     border: 8px solid;
     height: 272px;
 }
+
 #image_best_film {
     text-align: center;
     vertical-align: center;
@@ -36,6 +37,7 @@ body {
     top: 20px;
     margin-left: 15px;
 }
+
 #description_best_film {
     font-size: x-large;
     position: absolute;
@@ -44,6 +46,7 @@ body {
     
     top: 125px;
 }
+
 #BoutonPlay {
     
     height: 25px;
@@ -60,6 +63,7 @@ body {
     margin-left: 15px;
     
 }
+
 .lien_navigation{
     font-size: xx-large;
     color: lavender;
@@ -70,15 +74,18 @@ body {
     position: relative;
     
 }  
+
 .pochette {
     border: 8px solid;
     display: inline-block;
     margin-right: 20px;
     margin-left: 20px;
 }
+
 .pochette:hover {
     transform: scale(1.2);
 }
+
 #les_7_meilleirs_films {
     
     display: flex;
@@ -108,8 +115,3 @@ h1 {
 #image {
     float: right;
 }
-
-
-
-
-
