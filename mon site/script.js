@@ -2,7 +2,7 @@ var urlBySortImdbScore = "http://localhost:8000/api/v1/titles/?sort_by=-imdb_sco
 var urlBySortImdbScorePage2 = "http://localhost:8000/api/v1/titles/?sort_by=-imdb_score&page=2"
 
 function AddValue(id, value) {
-        content = document.createTextNode(value)
+        let content = document.createTextNode(value)
         var div = document.getElementById(id);
         div.appendChild(content);
 }
@@ -19,7 +19,6 @@ function addImgToDiv(element, identifiant, imgUrl, id_film) {
     var div = document.getElementById(identifiant)
     div.append(element)
 }
-
 
 function MeilleurFilm() {
     var url = "http://localhost:8000/api/v1/titles/?sort_by=-imdb_score"
@@ -55,7 +54,7 @@ function top7BestFilms(genre) {
                 id = data.results[i].id
                 var identifiant = 'film_' + i
                 i++;
-                addImgToDiv('img', identifiant, imageUrl, id) 
+                addImgToDiv('img', identifiant, imageUrl, id)
             }
             fetch(urlBySortImdbScorePage2)
             .then(res => res.json())
