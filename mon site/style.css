@@ -83,19 +83,9 @@ body {
 }
 
 .pochette:hover {
-    transform: scale(1.2);
+    border-color: darkgrey;
 }
 
-#les_7_meilleirs_films {
-    
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  
-  #les_7_meilleurs_films :first-child {
-      align-self: center;
-  }
 
 h1 {
     text-align: center;
@@ -103,9 +93,9 @@ h1 {
 
 #fenetreModale {
     position: relative;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin: auto;
     width: 970px;
+    min-width: 970px;
 }
 
 #croix {
@@ -115,3 +105,201 @@ h1 {
 #image {
     float: right;
 }
+
+
+#wrapper {
+    
+    position: relative;
+  }
+
+  #carousel {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev,
+  #next {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next{
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }
+
+
+
+
+  #wrapper1{
+    
+    position: relative;
+  }
+
+  #carousel1 {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel1::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev1,
+  #next1 {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev1 {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next1{
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content1 {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }
+
+
+  #wrapper2{
+    
+    position: relative;
+  }
+
+  #carousel2 {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel2::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev2,
+  #next2 {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev2 {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next2{
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content2{
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }
+
+
+  #wrapper3 {
+    
+    position: relative;
+  }
+
+  #carousel3 {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel3::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev3,
+  #next3 {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev3 {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next3 {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content3 {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }

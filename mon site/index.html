@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title>Ma page de test</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
-    
+    <script type="text/javascript" src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   </head>
   <body>
-    <script type="text/javascript" src="script.js"></script>
-
     <div id="header">
       <STYLE>A {text-decoration: none;} </STYLE>
       <h1 class="nom_site">JustStreamIt</h1>
@@ -27,59 +26,171 @@
       <div id="description_best_film"></div>
     </div>
 
-    <div id="les_7_meilleurs_films">
-      <br>
+    <div id="wrapper">
       <h1>Films les mieux notès</h1>
-      <div class="pochette" id="film_1" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_2" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_3" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_4" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_5" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_6" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_7" onclick="FenetreModal()"></div>
-    </div>
+      <div id="carousel">
+        
+        <div id="content">
+          
+          <div class="pochette" id="film_1" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_2" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_3" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_4" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_5" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_6" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_7" onclick="FenetreModal()"></div>
+          
+        </div>
+      </div>
+      <button id="prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+        </svg>
+      </button>
+      <button id="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+        </svg>
+      </button>
+    </div> 
 
-    <br>
-
-    <div id="les_7_meilleurs_films_actions">
-      <br>
+    <div id="wrapper1">
       <h1>Actions</h1>
-      <div class="pochette" id="film_action_1" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_action_2" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_action_3" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_action_4" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_action_5" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_action_6" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_action_7" onclick="FenetreModal()"></div>
+      <div id="carousel1">
+        
+        <div id="content1">
+          
+          <div class="pochette" id="film_action_1" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_action_2" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_action_3" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_action_4" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_action_5" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_action_6" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_action_7" onclick="FenetreModal()"></div>
+          
+        </div>
+      </div>
+      <button id="prev1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+        </svg>
+      </button>
+      <button id="next1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+        </svg>
+      </button>
     </div>
 
     <br>
 
-    <div id="les_7_meilleurs_films_comedy">
-      <br>
+    <div id="wrapper2">
       <h1>Comedy</h1>
-      <div class="pochette" id="film_comedy_1" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_comedy_2" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_comedy_3" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_comedy_4" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_comedy_5" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_comedy_6" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_comedy_7" onclick="FenetreModal()"></div>
+      <div id="carousel2">
+        
+        <div id="content2">
+          
+          <div class="pochette" id="film_comedy_1" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_comedy_2" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_comedy_3" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_comedy_4" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_comedy_5" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_comedy_6" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_comedy_7" onclick="FenetreModal()"></div>
+          
+        </div>
+      </div>
+      <button id="prev2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+        </svg>
+      </button>
+      <button id="next2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+        </svg>
+      </button>
     </div>
 
     <br>
 
-    <div id="les_7_meilleurs_films_adventures">
-      <h1>Adventures</h1>
-      <br>
-      <div class="pochette" id="film_adventure_1" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_adventure_2" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_adventure_3" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_adventure_4" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_adventure_5" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_adventure_6" onclick="FenetreModal()"></div>
-      <div class="pochette" id="film_adventure_7" onclick="FenetreModal()"></div>
+    <div id="wrapper3" class="wrapper">
+      
+      <div id="carousel3" class="carousel">
+        <h1>Adventures</h1>
+        <div id="content3" class="content">
+          
+          <div class="pochette" id="film_adventure_1" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_adventure_2" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_adventure_3" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_adventure_4" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_adventure_5" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_adventure_6" onclick="FenetreModal()"></div>
+          <div class="pochette" id="film_adventure_7" onclick="FenetreModal()"></div>
+          
+        </div>
+      </div>
+      <button id="prev3" class="prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+        </svg>
+      </button>
+      <button id="next3" class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+        </svg>
+      </button>
     </div>
+      
+      <br>
 
     <dialog id="fenetreModale">
       
@@ -125,5 +236,44 @@
       <div id="resume"></div>
      
     </dialog>
+
+    <script>
+      function carousel(carousel, content, next, prev) {
+
+        let gap = 16;
+      
+        var carousel = document.getElementById(carousel),
+          content = document.getElementById(content),
+          next = document.getElementById(next),
+          prev = document.getElementById(prev);
+      
+        next.addEventListener("click", e => {
+          carousel.scrollBy(width + gap, 0);
+        if (carousel.scrollWidth !== 0) {
+          prev.style.display = "flex";
+        }
+        if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+          next.style.display = "none";
+        }
+      });
+      prev.addEventListener("click", e => {
+        carousel.scrollBy(-(width + gap), 0);
+        if (carousel.scrollLeft - width - gap <= 0) {
+          prev.style.display = "none";
+        }
+        if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+          next.style.display = "flex";
+        }
+      });
+      
+      let width = carousel.offsetWidth;
+      window.addEventListener("resize", e => (width = carousel.offsetWidth));
+      }
+      carousel("carousel", "content", "next", "prev")
+      carousel("carousel1", "content1", "next1", "prev1")
+      carousel("carousel2", "content2", "next2", "prev2")
+      carousel("carousel3", "content3", "next3", "prev3")
+    </script>
+  
   </body>
 </html>
