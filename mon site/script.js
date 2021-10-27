@@ -32,10 +32,11 @@ function MeilleurFilm() {
             var titre = data.title
             var image = data.image_url
             var description = data.long_description
-            
+            let id = data.id
             addContentToDiv('title_best_film', titre)
-            addImgToDiv('img', 'image_best_film', image)
+            addImgToDiv('img', 'image_best_film', image, id)
             addContentToDiv('description_best_film', description)
+
         })
     })}
 
@@ -104,10 +105,14 @@ function top7BestFilms(genre) {
     }
 }
 
+
 top7BestFilms('')
 top7BestFilms('action')
 top7BestFilms('comedy')
 top7BestFilms('adventure')
+setTimeout(function() {
+    document.body.removeAttribute('style')
+}, 550);
 
 
 function takeInformationsFromFilms(id) {
