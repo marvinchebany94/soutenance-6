@@ -1,0 +1,311 @@
+body {
+    width: 600px;
+    margin: auto;
+    overflow-x: scroll;
+    min-width: 1000px;
+    
+}  
+
+#header {
+    height: 75px;
+    border-width: 300px;
+    background-color: rgb(138, 138, 138);
+    border: solid;
+    width: 100%;
+    min-width: 100%;
+}
+
+#film_le_mieux_note {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+    border: 8px solid;
+    height: 272px;
+}
+
+#image_best_film {
+    text-align: center;
+    vertical-align: center;
+    bottom: -2px;
+    position: relative;
+}
+
+#title_best_film {
+    font-size: xx-large;
+    
+    position: absolute; 
+    top: 20px;
+    margin-left: 15px;
+}
+
+#description_best_film {
+    font-size: x-large;
+    position: absolute;
+    margin-left: 15px;
+    width: 380px;
+    
+    top: 125px;
+}
+
+#BoutonPlay {
+    
+    height: 25px;
+    position: absolute;
+    top: 80px;
+    margin-left: 15px;
+}
+
+.nom_site {
+    font-size: xx-large;
+    position: relative;
+    display: inline-block;
+    color: lavender;
+    margin-left: 15px;
+    
+}
+
+.lien_navigation{
+    font-size: xx-large;
+    color: lavender;
+    justify-content: center;
+    display: inline-block;
+    left: 300px;
+    margin-left: 15px;
+    position: relative;
+    
+}  
+
+.pochette {
+    border: 8px solid;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.pochette:hover {
+    border-color: darkgrey;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#fenetreModale {
+    position: relative;
+    margin: auto;
+    width: 970px;
+    min-width: 970px;
+}
+
+#croix {
+    text-align: center;
+}
+
+#image {
+    float: right;
+}
+
+
+#wrapper {
+    
+    position: relative;
+  }
+
+  #carousel {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev,
+  #next {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translate(50%, -50%);
+    display: flex;
+  }
+  
+  #next{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }
+
+  #wrapper1{
+    
+    position: relative;
+  }
+
+  #carousel1 {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel1::-webkit-scrollbar {
+    height: 0;
+  }
+
+  #prev1,
+  #next1 {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  #prev1 {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translate(50%, -50%);
+    display: flex;
+  }
+  
+  #next1{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content1 {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }
+
+
+  #wrapper2{
+    
+    position: relative;
+  }
+
+  #carousel2 {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel2::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev2,
+  #next2 {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev2 {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translate(50%, -50%);
+    display: flex;
+  }
+  
+  #next2{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content2{
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }
+
+
+  #wrapper3 {
+    
+    position: relative;
+  }
+
+  #carousel3 {
+    overflow-x: auto;
+    
+    scrollbar-width: none;
+  }
+  
+  #carousel3::-webkit-scrollbar {
+    height: 0;
+  }
+  #prev3,
+  #next3 {
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev3 {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translate(50%, -50%);
+    display: flex;
+  }
+  
+  #next3 {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content3 {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+  }
