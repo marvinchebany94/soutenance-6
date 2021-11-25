@@ -39,4 +39,4 @@ Pour faire défiler les films il faudra simplement utiliser les fléches se trou
 La page accueil contient les sections suivantes : films les mieux notès, Actions, Comedy et Adventures
 
 
-
+Afin de voir que le fichier css et javascript ne contiennent aucune erreur j'irai sur le site suivant : https://jigsaw.w3.org/css-validator/#validate_by_upload, le site scannera nos fichiers afin de les valider.
