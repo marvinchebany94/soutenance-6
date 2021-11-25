@@ -25,7 +25,7 @@ Démarrer le serveur avec $ python manage.py runserver
 Il faudra ensuite placer le dossier "mon site" à la base du dossier "OCMovies-API-EN-FR-master" qui a été téléchargé auparavant.
 
 Pour se rendre sur le site : chemin/OCMovies-API-EN-FR-master/mon site/index.html
-(le chemin est l'endroit ou se trouve votre dossier 
+(le chemin est l'endroit ou se trouve votre dossier) 
 
 Lorsque vous arriverez sur le site vous trouverez une bannière contenant le nom du site "JustStreamIt", une barre de navigation avec 2 liens "Accueil" et "Catégories". Sous cela se trouve le film ayant la plus haute note imdb, nous y trouverons au centre son affiche, en haut à gauche son titre, sous le titre un bouton "play" qui servira à lancer le film et pour finir la description du film sous ce bouton. Si vous cliquez sur l'affiche, uen fenêtre modale s'ouvrira et affichera des informations comme le titre, date de sortie, acteurs, pays d'origine etc.
 
