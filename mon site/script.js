@@ -7,10 +7,12 @@ function AddValue(id, value) {
         div.appendChild(content);
 }
 
+
 function addContentToDiv(id, value) {
     var div = document.getElementById(id)
     div.append(value)
 }
+
 
 function addImgToDiv(element, identifiant, imgUrl, id_film) {
     var element = document.createElement(element)
@@ -19,6 +21,7 @@ function addImgToDiv(element, identifiant, imgUrl, id_film) {
     var div = document.getElementById(identifiant)
     div.append(element)
 }
+
 
 function MeilleurFilm() {
     var url = "http://localhost:8000/api/v1/titles/?sort_by=-imdb_score"
@@ -41,6 +44,7 @@ function MeilleurFilm() {
     })}
 
 MeilleurFilm()
+
 
 function top7BestFilms(genre) {
     
@@ -115,39 +119,6 @@ setTimeout(function() {
 }, 550);
 
 
-function takeInformationsFromFilms(id) {
-    var url = "http://localhost:8000/api/v1/titles/" + id
-    fetch(url)
-    .then(res => res.json())
-    .then(data => {
-        var  image = data.image_url
-        var titre = data.title
-        var genre = data.genres
-        var dateDeSortie = data.date_published
-        var rated = data.rated
-        var scoreImdb = data.imdb_score
-        var realisateur = data.writers
-        var acteurs = data.actors
-        var duree = data.duration
-        var paysOrigine = data.countries
-        var boxOfficeresultat = data.avg_vote
-        var resume = data.long_description
-        console.log(image)
-        console.log(titre)
-        console.log(genre)
-        console.log(dateDeSortie)
-        console.log(rated)
-        console.log(scoreImdb)
-        console.log(realisateur)
-        console.log(acteurs)
-        console.log(duree)
-        console.log(paysOrigine)
-        console.log(boxOfficeresultat)
-        console.log(resume)
-    })
-}
-
-
 function getIdBygenres(genre) {
     var url = "http://localhost:8000/api/v1/titles/?genre=" + genre + "&sort_by=-imdb_score"
     
@@ -162,9 +133,6 @@ function getIdBygenres(genre) {
             listeId.push(idFilm);
             i++;
         }
-        for (id of listeId) {
-            takeInformationsFromFilms(id)
-        }
     })
 
     url = "http://localhost:8000/api/v1/titles/?genre=" + genre + "&page=2" + "&sort_by=-imdb_score"
@@ -178,11 +146,9 @@ function getIdBygenres(genre) {
             listeId.push(idFilm)
             i++;
         }
-        for (id of listeId) {
-            takeInformationsFromFilms(id)
-    }
 })
 }
+
 
 function FenetreModal() {
     id = event.srcElement.id
@@ -221,10 +187,14 @@ function FenetreModal() {
     windowModal.showModal()
 
 }
+
+
 function viderDiv(id) {
     div = document.getElementById(id)
     div.innerHTML = "";
 }
+
+
 function Fermer() {
     windowModal = document.getElementById('fenetreModale')
     windowModal.close()
